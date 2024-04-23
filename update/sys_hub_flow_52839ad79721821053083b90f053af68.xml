@@ -35,7 +35,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>52839ad79721821053083b90f053af68</sys_id>
-        <sys_mod_count>48</sys_mod_count>
+        <sys_mod_count>54</sys_mod_count>
         <sys_name>期限を過ぎたNeedIt タスクをクローズ処理</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
@@ -43,7 +43,7 @@
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_hub_flow_52839ad79721821053083b90f053af68</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-22 08:10:50</sys_updated_on>
+        <sys_updated_on>2024-04-23 07:23:02</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=52839ad79721821053083b90f053af68"/>
@@ -185,10 +185,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-19 07:09:15</sys_created_on>
         <sys_id>af14da1f9721821053083b90f053affc</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-22 07:58:41</sys_updated_on>
+        <sys_updated_on>2024-04-23 07:11:47</sys_updated_on>
         <ui_id>d4315b4a-682c-4c39-a873-1a64c6c4e9c4</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=af14da1f9721821053083b90f053affc"/>
@@ -224,10 +224,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-19 07:12:28</sys_created_on>
         <sys_id>e6d4529f9721821053083b90f053afe5</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-22 07:55:47</sys_updated_on>
+        <sys_updated_on>2024-04-23 07:22:52</sys_updated_on>
         <ui_id>bda5708b-a45f-42f2-929c-83d6dec817f0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e6d4529f9721821053083b90f053afe5"/>
@@ -252,11 +252,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-19 07:20:43</sys_created_on>
         <sys_id>dfb6d2539761821053083b90f053afd8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-19 07:20:43</sys_updated_on>
+        <sys_updated_on>2024-04-23 07:03:46</sys_updated_on>
         <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
-        <value>due_date&lt;{{d4315b4a-682c-4c39-a873-1a64c6c4e9c4.calculated_date}}^NQstate=1</value>
+        <value>due_date&lt;{{d4315b4a-682c-4c39-a873-1a64c6c4e9c4.calculated_date}}^state=1</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>table</field>
@@ -289,10 +289,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-22 07:58:42</sys_created_on>
         <sys_id>f03c3194977d861053083b90f053afe8</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-22 08:10:40</sys_updated_on>
+        <sys_updated_on>2024-04-23 07:17:12</sys_updated_on>
         <ui_id>304244d8-846b-4338-9f47-f21dadf3bdba</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f03c3194977d861053083b90f053afe8"/>
@@ -308,7 +308,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-04-22 07:58:42</sys_updated_on>
         <value>1</value>
-        <variable display_value="Wait For Completion">bc3c3194977d861053083b90f053afe8</variable>
+        <variable display_value="wait_for_completion">bc3c3194977d861053083b90f053afe8</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=f03c3194977d861053083b90f053afe8"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
@@ -334,18 +334,6 @@
         <sys_updated_on>2024-04-22 08:00:16</sys_updated_on>
         <table>var__m_sys_hub_flow_input_3ebe0e579721821053083b90f053af38</table>
         <value>Needit Task{{cda5607f-77fc-4ce4-b446-d26e4abc8f50.item.number}}was autmatically closef because its Due date  of{{cda5607f-77fc-4ce4-b446-d26e4abc8f50.item.due_date}} was older than the autoCloseOverdue setting of {{3bff0447-8b90-4171-ba99-767628a22c15.property_value}}days.</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>f03c3194977d861053083b90f053afe8</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-04-22 07:58:42</sys_created_on>
-        <sys_id>4d3c3194977d861053083b90f053aff3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-22 07:58:42</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_f03c3194977d861053083b90f053afe8</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_f03c3194977d861053083b90f053afe8^id=f03c3194977d861053083b90f053afe8"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=f03c3194977d861053083b90f053afe8^sys_idNOT INbc3c3194977d861053083b90f053afe8"/>
@@ -386,7 +374,7 @@
         <help/>
         <hint/>
         <internal_type display_value="">boolean</internal_type>
-        <label>Wait For Completion</label>
+        <label>wait_for_completion</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
         <model display_value="">f03c3194977d861053083b90f053afe8</model>
@@ -412,14 +400,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-22 07:58:42</sys_created_on>
         <sys_id>bc3c3194977d861053083b90f053afe8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-22 07:58:42</sys_updated_on>
+        <sys_updated_on>2024-04-23 07:06:55</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -458,10 +446,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-19 07:14:42</sys_created_on>
         <sys_id>df55d6df9721821053083b90f053af6d</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-22 08:07:58</sys_updated_on>
+        <sys_updated_on>2024-04-23 07:18:56</sys_updated_on>
         <ui_id>cda5607f-77fc-4ce4-b446-d26e4abc8f50</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
