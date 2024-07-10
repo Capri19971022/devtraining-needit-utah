@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="9596724997d3021053083b90f053aff3" extends="sys_import_set_row" label="Historic NeedIt Data" max_length="40" name="x_58872_needit_historic_needit_data" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=source filed" label="source filed" max_length="40" name="u_source_filed" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Coalesce" label="Coalesce" max_length="40" name="u_coalesce" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Target filed" label="Target filed" max_length="40" name="u_target_filed" type="string"/>
+    </element>
+</database>
